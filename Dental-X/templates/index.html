@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>YOLOv8 Dental Object Detection</title>
+    <title>Dental-X</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,10 +111,16 @@
             font-size: 16px;
             margin: 20px;
         }
+        .logo {
+  width: 150px;   /* resize */
+  display: block;
+  margin: 0 auto; /* center */
+}
     </style>
 </head>
 <body>
-    <img id="logo" src="https://i.ibb.co/60r7bkT/DALL-E-2023-12-12-01-42-59-A-logo-for-X-Ray-Deep-Learning-Analysis-focused-on-dental-imagery-The-log.png" alt="X-Ray Deep Learning Analysis Logo"/>
+   <img id="logo" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="dental-x logo">
+
     
     <input id="uploadInput" type="file" accept="image/*"/>
     <canvas id="canvas"></canvas>

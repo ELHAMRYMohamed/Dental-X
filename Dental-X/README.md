@@ -1,6 +1,5 @@
-# TeethXrayAI
-A computer vision project for AI teeth xray analysis. This repo features a yolov8 object detection model based on the [dentex dataset](https://universe.roboflow.com/dentex/dentex-3xe7e) and a simple web interface for querying it. 
-If you dont want to selfhost it then you can use my personal deployment https://xray.cyphersec.eu/
+# Dental-X
+A computer vision project for AI teeth xray analysis. This repo features a yolov8 object detection model based on the [dentex dataset](https://drive.google.com/drive/folders/15UN6PO--e1sH7CrsCCCnOPV8DcuXzGjc) and a simple web interface for querying it. 
 
 ![Screenshot](images/img1.png)
 
@@ -11,8 +10,8 @@ If you dont want to selfhost it then you can use my personal deployment https://
 
 ## Self Hosting
 If you dont want to use the demo deployment and deploy the webUI yourself you have 2 options. You can either download the pretrained yolov8 model that i trained or you can train it yourself.
-Download link: [dental model](https://xray.cyphersec.eu/download)
- After downloading it/training it just pop it into the root of this repo and name it "best.pt". After that run 
+Download link: [dental model](https://github.com/ELHAMRYMohamed/Dental-X/blob/main/Dental-X/model.pt)
+ After downloading it/training it just pop it into the root of this repo and name it "model.pt". After that run 
 ```
 python3 -m pip install -r requirements.txt
 ```
@@ -21,14 +20,13 @@ followed by
 python3 object_detector.py
 ```
 This should make the UI available on http://127.0.0.1:8080
-## Training Proccess
-For training i used the YOLO package from the python ultralytics libary. Luckily this makes the training fairly easy.
-Step 1: Head over to roboflow and create an account. Once youre logged in go to https://universe.roboflow.com/dentex/dentex-3xe7e/dataset/2 and choose download dataset. Instead of downloading it directly i would recommend to get the download code in python and running that as the dataset has to be in ~/datasets/dentex-2/ in order for our training tool to find it. After the dir is in that location run 
+## Training Process
+1. Use my dataset
+Download link: [dental dataset](https://drive.google.com/drive/folders/15UN6PO--e1sH7CrsCCCnOPV8DcuXzGjc)
 
-```
-pip3 install ultralytics roboflow && yolo train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640 cache=True
-```
-The model will be saved in ~/datasets/dentex-2/runs/detect/train/weights/best.pt.
+2. Build your own dataset (recommended if you want to adapt the model to a different domain).
+
+
 ## Evaluation
 For the hyperparameters that i suggested my metrics are 
 ```
@@ -48,4 +46,3 @@ Model summary (fused): 168 layers, 3006428 parameters, 0 gradients, 8.1 GFLOPs
         impacted tooth        212        524      0.865      0.916      0.928      0.644      0.878      0.916      0.928      0.597
        maxillary sinus          9         18      0.514      0.611      0.513      0.389      0.534      0.611      0.513      0.339
 ```
-look at them and contemplate wether you would get better results training it yourself.
