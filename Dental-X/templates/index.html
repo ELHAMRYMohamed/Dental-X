@@ -111,15 +111,28 @@
             font-size: 16px;
             margin: 20px;
         }
-        .logo {
-  width: 150px;   /* resize */
-  display: block;
-  margin: 0 auto; /* center */
+   #logo {
+  display: block;        
+  margin: 20px auto;    
+  max-width: 200px;      
+  height: auto;          
+}
+
+
+#logo:hover {
+  transform: scale(1.05);   
+  transition: transform 0.3s ease;
+}
+
+
+#logo {
+  border-radius: 12px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
 }
     </style>
 </head>
 <body>
-   <img id="logo" src="https://github.com/ELHAMRYMohamed/Dental-X/blob/main/Dental-X/static/img/logo.jpg?raw=true" alt="dental-x logo">
+   <img id="logo" src="https://github.com/ELHAMRYMohamed/Dental-X/blob/main/Dental-X/static/img/logo.png?raw=true" alt="dental-x logo">
 
     
     <input id="uploadInput" type="file" accept="image/*"/>
