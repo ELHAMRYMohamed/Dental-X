@@ -19,7 +19,7 @@ infections, fractures)\
   X-ray image         A dental radiograph uploaded 
                        by the user    
                 
-![test](images/test.png)
+![test](images/test.jpg)
                                     
 
   ------------------------------------------------------------------------
