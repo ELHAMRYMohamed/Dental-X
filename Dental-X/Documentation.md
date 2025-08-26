@@ -1,3 +1,18 @@
+# 📑 Project Documentation -- Dental-X
+
+## 1. Introduction
+
+-   **Project Title:** Dental-X\
+-   **Context:** Dental professionals often need to analyze X-rays to
+    detect potential issues such as cavities, bone loss, or impacted
+    teeth. Manual inspection is time-consuming and prone to human
+    error.\
+-   **Objective:** Create a web application that uses an AI model to
+    analyze dental X-ray images and automatically highlight problematic
+    areas.
+
+------------------------------------------------------------------------
+## 2. Project description
 Dental-X is a web-based platform that allows dentists to upload dental
 X-rays. The system processes the images using a trained deep learning
 model and returns annotated results showing detected problem zones.
@@ -86,3 +101,10 @@ adding **error management**.
 1. Automate dataset conversion between formats (**COCO ↔ YOLO**).\
 2. Expand the dataset with more annotated X-rays to improve accuracy.\
 3. Add support for exporting diagnostic reports in **PDF/JSON** format.
+
+
+
+### Previous Project – Detectron2 Based  
+
+This model started from an existing implementation using [Detectron2](https://github.com/arpsn123/Dental-X-RAY-Image-Detection-and-Instance-Segmentation).  
+The main repository I worked with is available here: [Main Project Link](https://github.com/SubGlitch1/DentalXrayAI).  
