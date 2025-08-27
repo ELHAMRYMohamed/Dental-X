@@ -62,7 +62,7 @@ infections, fractures)\
 2.  **Dataset preparation:** I attempted to create a custom dataset in
     COCO format, but it was time-consuming and error-prone.\
 3.  **Class inconsistency:** The original project supported **4
-    classes**, but my dataset had **9 classes**, causing conflicts
+    classes**, but my dataset had **12 classes**, causing conflicts
     during training.\
 4.  **Model incompatibility:** The main project used **YOLO**, which
     requires `.pt` weights, while Detectron2 produces `.pth` weights ---
@@ -87,7 +87,7 @@ infections, fractures)\
 
 **Results Achieved:**\
 1. Successfully trained a YOLO-based model for dental X-ray analysis.\
-2. Adapted the main project to handle **9 classes** instead of 4.\
+2. Adapted the main project to handle **12 classes** instead of 4.\
 3. Improved usability by generating **per-class output images** and
 adding **error management**.
 
