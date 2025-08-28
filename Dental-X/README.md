@@ -31,7 +31,6 @@ Download link: [dental dataset](https://drive.google.com/drive/folders/15UN6PO--
 For the hyperparameters that i suggested my metrics are 
 ```
 Ultralytics YOLOv8.0.227 🚀 Python-3.10.12 torch-2.1.0+cu121 CUDA:0 (Tesla T4, 15102MiB)
-Model summary (fused): 168 layers, 3006428 parameters, 0 gradients, 8.1 GFLOPs
                   Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P         R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 17/17 2.5it/s 6.9s
                    all        260       2535      0.644      0.604      0.604      0.348      0.623      0.562      0.557      0.273
                 Caries         64        220      0.578      0.241      0.302       0.12      0.574      0.208      0.254     0.0885
